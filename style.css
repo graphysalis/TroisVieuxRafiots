@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(36, 34, 34);
+}
+
+h1 {
+  width: fit-content;
+  height: fit-content;
+  font-size: 2rem;
+  margin: auto;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.container {
+  width: 95%;
+  height: fit-content;
+  margin: auto;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#image-container {
+  width: 85%;
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1s ease-in-out;
+}
+
+.audio-container {
+  width: 85%;
+  max-width: 400px;
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+#audio {
+  display: none;
+}
+
+/* Ligne 1 : Play + Barre de lecture */
+.controls-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.play-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.seek-bar {
+  flex: 1;
+  appearance: none;
+  background: #444;
+  height: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Ligne 2 : Timestamp + Volume + Téléchargement */
+.controls-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.controls-bottom::before {
+  content: "\266B";
+  color: white;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.controls-bottom a {
+  font-size: 1.5rem;
+}
+
+.controls-bottom input {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.time {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.volume {
+  appearance: none;
+  width: 70px;
+  height: 5px;
+  background: #777;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  background: #444;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
