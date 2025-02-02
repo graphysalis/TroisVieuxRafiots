@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/images/Image1.png" />
+    <title>TROIS VIEUX RAFIOTS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Trois Vieux<br />Rafiots</h1>
+      <div id="image-container"></div>
+      <div class="audio-container">
+        <!-- Ligne 1 -->
+        <div class="controls-top">
+          <button class="play-btn">▶️</button>
+          <input type="range" class="seek-bar" min="0" value="0" />
+        </div>
+        <div class="time">0:00 / 2:47</div>
+        <!-- Ligne 2 -->
+        <div class="controls-bottom">
+          <input
+            type="range"
+            class="volume"
+            min="0"
+            max="1"
+            step="0.1"
+            value="0.5"
+          />
+          <a class="download" href="./assets/sounds/3VieuxRafiots.mp3" download
+            >Download mp3 ⬇️</a
+          >
+        </div>
+      </div>
+      <audio
+        id="audio"
+        src="./assets/sounds/3VieuxRafiots.mp3"
+        controls
+      ></audio>
+    </section>
+  </body>
+
+  <script src="script.js"></script>
+</html>
